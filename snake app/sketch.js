@@ -1,10 +1,10 @@
 
 var s;
-var scl = 40;
+var scl = 30;
 var food;
 
 function setup() {
-    createCanvas(600, 600);
+    createCanvas(500, 500);
     s = new Snake();
     frameRate(10);
     pickLocation();
@@ -22,7 +22,7 @@ function mousePressed() {
 }
 
 function draw() {
-    background(51);
+    background(71);
    
     if(s.eat(food)) {
         pickLocation();
